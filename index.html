@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <!-- Use your preferred fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Custom colors and fonts */
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .teal-bg {
+      background-color: #54a4a8;
+    }
+    .peach-text {
+      color: #f9cdb8;
+    }
+    .peach-bg {
+      background-color: #f9cdb8;
+    }
+    .teal-text {
+      color: #54a4a8;
+    }
+    .teal-border {
+      border-color: #54a4a8;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 leading-normal tracking-normal">
+
+  <!-- Navbar -->
+  <nav class="bg-teal-bg p-4 shadow-md">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Your logo or name here -->
+      <a href="#" class="text-xl font-bold text-peach-text">Welcome !</a>
+
+      <!-- Mobile navigation button -->
+      <button class="md:hidden text-peach-text">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation links -->
+      <div class="hidden md:flex space-x-4">
+        <a href="#about" class="text-peach-text hover:text-teal-text">About</a>
+        <a href="#portfolio" class="text-peach-text hover:text-teal-text">Portfolio</a>
+        <a href="#contact" class="text-peach-text hover:text-teal-text">Contact</a>
+        <!-- Add more navigation links as needed -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-teal-bg to-peach-bg py-16 relative">
+    <!-- SVG background pattern for profile picture -->
+    <div class="absolute inset-0 profile-bg"></div>
+    <div class="container mx-auto text-center">
+      <img src="dp.jpeg" alt="Your Name" class="w-32 h-32 rounded-full mx-auto mb-4">
+      <h1 class="text-peach-text text-4xl font-bold mb-4">Hello, I'm Moses Sunday</h1>
+      <p class="text-peach-text text-lg">I am a passionate web developer.</p>
+      <!-- Add a call-to-action button if needed -->
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-16 bg-white rounded-lg shadow-lg md:px-16 lg:px-32">
+    <div class="container mx-auto">
+      <h2 class="text-teal-text text-3xl font-bold mb-8">About Me</h2>
+      <p class="text-teal-text mb-4">Write a brief introduction about yourself here.</p>
+      <!-- Add more content as needed -->
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-16 bg-peach-bg rounded-lg shadow-lg md:px-16 lg:px-32">
+    <div class="container mx-auto">
+      <h2 class="text-teal-text text-3xl font-bold mb-8">Portfolio</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Add your portfolio projects here -->
+        <!-- Use image cards or links to the projects -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white rounded-lg shadow-lg md:px-16 lg:px-32">
+    <div class="container mx-auto">
+      <h2 class="text-teal-text text-3xl font-bold mb-8">Contact</h2>
+      <p class="text-teal-text mb-4">Get in touch with me:</p>
+      <!-- Add a contact form or contact information -->
+      <div class="flex space-x-4 text-teal-text text-2xl">
+        <!-- Replace the "#" with your actual social media links -->
+        <a href="#" class="hover:text-teal-text"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-teal-text"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="hover:text-teal-text"><i class="fab fa-github"></i></a>
+        <!-- Add more social media handles as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-teal-bg text-peach-text text-center py-4">
+    <p>© 2023 Your Name. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for responsive mobile navigation -->
+  <script>
+    const mobileMenuButton = document.querySelector('.md:hidden');
+    const mobileMenu = document.querySelector('.hidden.md\\:flex');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html> 
+  
