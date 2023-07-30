@@ -14,6 +14,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <link rel="stylesheet" href="callAction.css" />
+
+
+<!-- Link for the carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="carousel.css" />
+  
+  
   
   <style>
     /* Custom colors and fonts */
@@ -98,7 +106,7 @@ I am a skilled and knowledgeable full-stack web developer with expertise in HTML
     <br />
     <br />
   <div class="animate__animated animate__pulse">
-    <a href="#" class="glowing-btn">Contact Me</a>
+    <a href="https://wa.link/y0mqz2" class="glowing-btn">Contact Me</a>
   </div>
     
   </section>
@@ -108,7 +116,26 @@ I am a skilled and knowledgeable full-stack web developer with expertise in HTML
     <div class="container mx-auto">
       <h2 class="text-teal-text text-3xl font-bold mb-8">Portfolio</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+
+
+        
         <!-- Add your portfolio projects here -->
+
+         <div class="w-2/3 mx-auto">
+    <div class="carousel-container">
+      <img src="dp.jpeg" alt="Image 1" class="carousel-img active">
+      <img src="telhealth.jpeg" alt="Image 2" class="carousel-img">
+      <img src="prihealth.jpeg" alt="Image 3" class="carousel-img">
+      <div class="carousel-caption">
+        <p>Dummy Text 1</p>
+      </div>
+    </div>
+    <div class="carousel-controls text-center mt-4">
+      <button class="carousel-btn" onclick="prevSlide()">Previous</button>
+      <button class="carousel-btn" onclick="nextSlide()">Next</button>
+    </div>
+         </div>
         <!-- Use image cards or links to the projects -->
       </div>
     </div>
@@ -122,9 +149,9 @@ I am a skilled and knowledgeable full-stack web developer with expertise in HTML
       <!-- Add a contact form or contact information -->
       <div class="flex space-x-4 text-teal-text text-2xl">
         <!-- Replace the "#" with your actual social media links -->
-        <a href="#" class="hover:text-teal-text"><i class="fab fa-twitter"></i></a>
+        <a href="https://twitter.com/SundayMoses0?t=bsDwcjAXaHMTh5-4g1vnLQ&s=09" class="hover:text-teal-text"><i class="fab fa-twitter"></i></a>
         <a href="https://www.linkedin.com/in/moses-sunday" class="hover:text-teal-text"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="hover:text-teal-text"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/Moses-main" class="hover:text-teal-text"><i class="fab fa-github"></i></a>
         <a href="#" class="hover:text-teal-text"><i class="fab fa-whatsapp"></i></a>
         <!-- Add more social media handles as needed -->
       </div>
@@ -133,7 +160,7 @@ I am a skilled and knowledgeable full-stack web developer with expertise in HTML
 
   <!-- Footer -->
   <footer class="bg-teal-bg text-peach-text text-center py-4">
-    <p>© 2023 Your Name. All rights reserved.</p>
+    <p>© 2023 Moses Sunday. All rights reserved.</p>
   </footer>
 
   <!-- JavaScript for responsive mobile navigation -->
@@ -145,7 +172,11 @@ I am a skilled and knowledgeable full-stack web developer with expertise in HTML
       mobileMenu.classList.toggle('hidden');
     });
   </script>
-
+<!-- link for the carousel JavaScript engine -->
+  <script src="carousel.js">
+     
+  </script>
+  
 </body>
 
 </html> 
