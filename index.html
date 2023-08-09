@@ -28,6 +28,7 @@
     <style>
         /* Custom colors and fonts */
         body {
+            padding: 0px;
             font-family: 'Montserrat', sans-serif;
         }
         .teal-bg {
@@ -77,6 +78,15 @@
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
         }
+@media (min-width : 768px){
+   .navbar-icon {
+                visibility: hidden;
+                display: none;
+            }
+    .modal{
+        display: none;
+    }
+}
 
         .navbar-buttons {
             display: flex;
