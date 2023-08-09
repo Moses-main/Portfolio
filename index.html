@@ -2,195 +2,296 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
-  <!-- Use your preferred fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-<!-- Link for the call to action button -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  
-<!--The style for the call to action button on the portfolio i.e ghr contact me buttons -->
-  
-  <link rel="stylesheet" href="callAction.css" />
-
-
-<!-- Link for the carousel -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <!-- Use your preferred fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  
-<!-- Link to thw carousel styling-->
-  <link rel="stylesheet" href="carousel.css" />
-  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-  <style>
-    /* Custom colors and fonts */
-    body {
-      font-family: 'Montserrat', sans-serif;
-    }
-    .teal-bg {
-      background-color: #54a4a8;
-    }
-    .peach-text {
-      color: #f9cdb8;
-    }
-    .peach-bg {
-      background-color: #f9cdb8;
-    }
-    .teal-text {
-      color: #54a4a8;
-    }
-    .teal-border {
-      border-color: #54a4a8;
-    }
-    .marg{
-      margin:5px 20px;
-    }
-  </style>
+    <!-- Link for the call to action button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!--The style for the call to action button on the portfolio i.e ghr contact me buttons -->
+
+    <link rel="stylesheet" href="callAction.css" />
+
+
+    <!-- Link for the carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Link to thw carousel styling-->
+    <link rel="stylesheet" href="carousel.css" />
+
+
+    <style>
+        /* Custom colors and fonts */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .teal-bg {
+            background-color: #54a4a8;
+        }
+        .peach-text {
+            color: #f9cdb8;
+        }
+        .peach-bg {
+            background-color: #f9cdb8;
+        }
+        .teal-text {
+            color: #54a4a8;
+        }
+        .teal-border {
+            border-color: #54a4a8;
+        }
+        .marg {
+            margin: 5px 20px;
+        }
+
+
+        /*styles for the modal box*/
+@media (max-width: 768px) {
+            .navbar {
+                display: none;
+            }
+            .navbar-icon {
+                display: block;
+            }
+            .modal {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+            }
+            .modal-content {
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .navbar-buttons {
+            display: flex;
+            padding: 15px;
+        }
+        .modal-navbar-buttons button {
+            display: block;
+            padding: 15px;
+            width: 300px;
+            margin: 5px 0px;
+        }
+        .close-modal {
+            margin-bottom: 20px;
+            color: teal;
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-left: 5px;
+            width: 50px;
+            text-align: center;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 4px white;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
 </head>
 
 <body class="bg-gray-100 text-gray-900 leading-normal tracking-normal">
 
-  <!-- Navbar -->
-  <nav class="bg-teal-bg p-4 shadow-md">
-    <div class="container mx-auto flex items-center justify-between">
-      <!-- Your logo or name here -->
-      <a href="#" class="text-xl font-bold text-peach-text">Welcome !</a>
+    <!-- Navbar -->
+    <nav class="bg-teal-bg p-4 shadow-md">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Your logo or name here -->
+            <a href="#" class="text-xl font-bold text-peach-text">Welcome !</a>
 
-      <!-- Mobile navigation button -->
-      <button class="md:hidden text-peach-text">
-        <i class="fas fa-bars"></i>
-      </button>
+            <!-- Mobile navigation button -->
+            <button class="md:hidden text-peach-text">
+                <i class="fas fa-bars navbar-icon"></i>
+            </button>
 
-      <!-- Navigation links -->
-      <div class="hidden md:flex space-x-4">
-        <a href="#about" class="text-peach-text hover:text-teal-text">About</a>
-        <a href="#portfolio" class="text-peach-text hover:text-teal-text">Portfolio</a>
-        <a href="#contact" class="text-peach-text hover:text-teal-text">Contact</a>
-        <!-- Add more navigation links as needed -->
-      </div>
+            <!-- Navigation links -->
+            <div class="hidden md:flex space-x-4">
+                <a href="#about" class="text-peach-text hover:text-teal-text">About</a>
+                <a href="#portfolio" class="text-peach-text hover:text-teal-text">Portfolio</a>
+                <a href="#contact" class="text-peach-text hover:text-teal-text">Contact</a>
+                <!-- Add more navigation links as needed -->
+            </div>
+        </div>
+    </nav>
+    
+    <!--
+
+    <div class="navbar-icon">
+        &#9776;
     </div>
-  </nav>
+    -->
 
-  <!-- Hero Section -->
-  <header class="bg-gradient-to-r from-teal-bg to-peach-bg py-16 relative">
-    <!-- SVG background pattern for profile picture -->
-    <div class="absolute inset-0 profile-bg"></div>
-    <div class="container mx-auto text-center">
-      <img src="dp.jpeg" alt="Your Name" class="w-32 h-32 rounded-full mx-auto mb-4">
-      <h1 class="text-peach-text text-4xl font-bold mb-4">Hello, I'm Moses Sunday</h1>
-      <p class="text-peach-text text-lg">I am a passionate fullstack web developer.</p>
-      <!-- Add a call-to-action button if needed -->
-      <br />
-      <br />
-  <div class="animate__animated animate__pulse">
-    <a href="https://wa.link/y0mqz2" class="glowing-btn">Contact Me</a>
-  </div>
-      
+    <div class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&#10006;</button>
+            <div class="modal-navbar-buttons">
+                <button><a class="" href="#">Home</a></button>
+                <button><a class="" href="#">Portfolio</a></button>
+                 <button><a class="" href="#">About</a></button>
+                 <button><a class="" href="#">Contact me</a></button>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <!-- About Me Section -->
-  <section id="about" class="py-16 bg-white rounded-lg shadow-lg md:px-16 lg:px-32">
-    <div class="container mx-auto">
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-teal-bg to-peach-bg py-16 relative">
+        <!-- SVG background pattern for profile picture -->
+        <div class="absolute inset-0 profile-bg"></div>
+        <div class="container mx-auto text-center">
+            <img src="dp.jpeg" alt="Your Name" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h1 class="text-peach-text text-4xl font-bold mb-4">Hello, I'm Moses Sunday</h1>
+            <p class="text-peach-text text-lg">
+                I am a passionate fullstack web developer.
+            </p>
+            <!-- Add a call-to-action button if needed -->
+            <br />
+            <br />
+            <div class="animate__animated animate__pulse">
+                <a href="https://wa.link/y0mqz2" class="glowing-btn">Contact Me</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-white rounded-lg shadow-lg md:px-16 lg:px-32">
+        <div class="container mx-auto">
             <div class="marg">
-      <h2 class="text-teal-text text-3xl font-bold mb-8">About Me</h2>
+                <h2 class="text-teal-text text-3xl font-bold mb-8">About Me</h2>
 
-  <p class="text-teal-text mb-4 text-lg font-medium">
-I am a skilled and knowledgeable full-stack web developer with expertise in HTML, CSS, JavaScript, PHP, and MySQL.  <p class="text-teal-text mb-4 text-lg font-medium">With a strong foundation in these technologies, I have successfully created visually appealing and responsive user interfaces while securely handling data on the server-side.</p>
- <p class="text-teal-text mb-4 text-lg font-medium">
- Additionally, I have gained two years of valuable experience in the tech industry, honing my skills and staying up-to-date with the latest web development trends. My passion for technology and dedication to continuous learning enable me to tackle challenges and deliver high-quality projects.</p>
-    
- <p class="text-teal-text mb-4 text-lg font-medium">
-  As a full-stack web developer, I bring a holistic approach to web development, seamlessly integrating front-end and back-end technologies.
- </p>
-      <!-- Add more content as needed -->
-    
+                <p class="text-teal-text mb-4 text-lg font-medium">
+                    I am a skilled and knowledgeable full-stack web developer with expertise in HTML, CSS, JavaScript, PHP, and MySQL.  <p class="text-teal-text mb-4 text-lg font-medium">
+                        With a strong foundation in these technologies, I have successfully created visually appealing and responsive user interfaces while securely handling data on the server-side.
+                    </p>
+                    <p class="text-teal-text mb-4 text-lg font-medium">
+                        Additionally, I have gained two years of valuable experience in the tech industry, honing my skills and staying up-to-date with the latest web development trends. My passion for technology and dedication to continuous learning enable me to tackle challenges and deliver high-quality projects.
+                    </p>
 
-    <!-- call to action button -->
-    <br />
-    <br />
-  <div class="animate__animated animate__pulse">
-    <a href="https://wa.link/y0mqz2" class="glowing-btn">Contact Me</a>
-  </div>
-</div>
-    
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-16 bg-peach-bg rounded-lg shadow-lg md:px-16 lg:px-32">
-    <div class="container mx-auto marg">
-      <h2 class="text-teal-text text-3xl font-bold mb-8">Portfolio <span><a href="portfolio.html" class="hover:text-teal-text"><i class="fab fa"></i>🔗</a></span></h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <p class="text-teal-text mb-4 text-lg font-medium">
+                        As a full-stack web developer, I bring a holistic approach to web development, seamlessly integrating front-end and back-end technologies.
+                    </p>
+                    <!-- Add more content as needed -->
 
 
+                    <!-- call to action button -->
+                    <br />
+                    <br />
+                    <div class="animate__animated animate__pulse">
+                        <a href="https://wa.link/y0mqz2" class="glowing-btn">Contact Me</a>
+                    </div>
+                </div>
 
-        
-        <!-- Add your portfolio projects here -->
+            </section>
 
-         <div class="w-2/3 mx-auto">
-    <div class="carousel-container">
-      <img src="dp.jpeg" alt="Image 1" class="carousel-img active">
-      <img src="telhealth.jpeg" alt="Image 2" class="carousel-img">
-      <img src="prihealth.jpeg" alt="Image 3" class="carousel-img">
-      <div class="carousel-caption">
-        <p>Dummy Text 1</p>
-      </div>
-    </div>
-    <div class="carousel-controls text-center mt-4">
-      <button class="carousel-btn" onclick="prevSlide()">Previous</button>
-      <button class="carousel-btn" onclick="nextSlide()">Next</button>
-    </div>
-         </div>
-        <!-- Use image cards or links to the projects -->
-      </div>
-    </div>
-  </section>
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="py-16 bg-peach-bg rounded-lg shadow-lg md:px-16 lg:px-32">
+                <div class="container mx-auto marg">
+                    <h2 class="text-teal-text text-3xl font-bold mb-8">Portfolio <span><a href="portfolio.html" class="hover:text-teal-text"><i class="fab fa"></i>🔗</a></span></h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-white rounded-lg shadow-lg md:px-16 lg:px-32">
-    <div class="container mx-auto marg">
-      <h2 class="text-teal-text text-3xl font-bold mb-8">Contact</h2>
-      <p class="text-teal-text mb-4">Get in touch with me:</p>
-      <!-- Add a contact form or contact information -->
-      <div class="flex space-x-4 text-teal-text text-2xl">
-        <!-- Replace the "#" with your actual social media links -->
-        <a href="https://twitter.com/SundayMoses0?t=bsDwcjAXaHMTh5-4g1vnLQ&s=09" class="hover:text-teal-text"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/moses-sunday" class="hover:text-teal-text"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Moses-main" class="hover:text-teal-text"><i class="fab fa-github"></i></a>
-        
-        <a href="https://wa.link/y0mqz2" class="hover:text-teal-text"><i class="fab fa-whatsapp"></i></a>
 
-        <!--
-        <a href="mailto: moseschizaram8@gmail.com" class="hover:text-teal-text"><i class="fab fa-mail"></i></a> -->
-        
-        <!-- Add more social media handles as needed -->
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-teal-bg text-peach-text text-center py-4">
-    <p>© 2023 Moses Sunday. All rights reserved.</p>
-  </footer>
 
-  <!-- JavaScript for responsive mobile navigation -->
-  <script>
-    const mobileMenuButton = document.querySelector('.md:hidden');
-    const mobileMenu = document.querySelector('.hidden.md\\:flex');
+                        <!-- Add your portfolio projects here -->
 
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-<!-- link for the carousel JavaScript engine -->
-  <script src="carousel.js">
-     
-  </script>
-  
-</body>
+                        <div class="w-2/3 mx-auto">
+                            <div class="carousel-container">
+                                <img src="dp.jpeg" alt="Image 1" class="carousel-img active">
+                                <img src="telhealth.jpeg" alt="Image 2" class="carousel-img">
+                                <img src="prihealth.jpeg" alt="Image 3" class="carousel-img">
+                                <div class="carousel-caption">
+                                    <p>
+                                        Dummy Text 1
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-controls text-center mt-4">
+                                <button class="carousel-btn" onclick="prevSlide()">Previous</button>
+                                <button class="carousel-btn" onclick="nextSlide()">Next</button>
+                            </div>
+                        </div>
+                        <!-- Use image cards or links to the projects -->
+                    </div>
+                </div>
+            </section>
 
-</html> 
-  
+            <!-- Contact Section -->
+            <section id="contact" class="py-16 bg-white rounded-lg shadow-lg md:px-16 lg:px-32">
+                <div class="container mx-auto marg">
+                    <h2 class="text-teal-text text-3xl font-bold mb-8">Contact</h2>
+                    <p class="text-teal-text mb-4">
+                        Get in touch with me:
+                    </p>
+                    <!-- Add a contact form or contact information -->
+                    <div class="flex space-x-4 text-teal-text text-2xl">
+                        <!-- Replace the "#" with your actual social media links -->
+                        <a href="https://twitter.com/SundayMoses0?t=bsDwcjAXaHMTh5-4g1vnLQ&s=09" class="hover:text-teal-text"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/moses-sunday" class="hover:text-teal-text"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Moses-main" class="hover:text-teal-text"><i class="fab fa-github"></i></a>
+
+                        <a href="https://wa.link/y0mqz2" class="hover:text-teal-text"><i class="fab fa-whatsapp"></i></a>
+
+                        <!--
+                                <a href="mailto: moseschizaram8@gmail.com" class="hover:text-teal-text"><i class="fab fa-mail"></i></a> -->
+
+                        <!-- Add more social media handles as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-teal-bg text-peach-text text-center py-4">
+                <p>
+                    © 2023 Moses Sunday. All rights reserved.
+                </p>
+            </footer>
+
+            <!-- JavaScript for responsive mobile navigation -->
+            <script>
+                const mobileMenuButton = document.querySelector('.md:hidden');
+                const mobileMenu = document.querySelector('.hidden.md\\:flex');
+
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            </script>
+
+            <!-- script for the modal -->
+                <script>
+        const navbarIcon = document.querySelector('.navbar-icon');
+        const modal = document.querySelector('.modal');
+        const closeModal = document.querySelector('.close-modal');
+
+        navbarIcon.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    </script>
+            <!-- link for the carousel JavaScript engine -->
+            <script src="carousel.js">
+
+            </script>
+
+        </body>
+
+    </html>
