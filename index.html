@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Home | Moses</title>
     <!-- Use your preferred fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -14,117 +14,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!--The style for the call to action button on the portfolio i.e ghr contact me buttons -->
-
-    <link rel="stylesheet" href="callAction.css" />
-
+    <!-- <link rel="stylesheet" href="callAction.css" /> -->
 
     <!-- Link for the carousel -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- Link to thw carousel styling-->
-    <link rel="stylesheet" href="carousel.css" />
+    <!-- <link rel="stylesheet" href="carousel.css" /> -->
 
-
-    <style>
-        /* Custom colors and fonts */
-        body {
-            padding: 0px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        .teal-bg {
-            background-color: #54a4a8;
-        }
-        .peach-text {
-            color: #f9cdb8;
-        }
-        .peach-bg {
-            background-color: #f9cdb8;
-        }
-        .teal-text {
-            color: #54a4a8;
-        }
-        .teal-border {
-            border-color: #54a4a8;
-        }
-        .marg {
-            margin: 5px 20px;
-        }
-
-
-        /*styles for the modal box*/
-@media (max-width: 768px) {
-            .navbar {
-                display: none;
-            }
-            .navbar-icon {
-                display: block;
-            }
-            .modal {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.8);
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-            }
-            .modal-content {
-                background-color: white;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-.modal-navbar-buttons button {
-            display: block;
-            padding: 15px;
-            background-color: #f0f0f0;
-            width: 300px;
-            margin: 5px 0px;
-            border-radius: 5px;
-            font-size: 1.4rem;
-            border: 1px solid rgba(0,0,0,0.1);
-        }
-        }
-@media (min-width : 768px){
-   .navbar-icon {
-                visibility: hidden;
-                display: none;
-            }
-    .modal{
-        display: none;
-    }
-}
-
-        .navbar-buttons {
-            display: flex;
-            padding: 15px;
-        }
-        .modal-navbar-buttons button {
-            display: block;
-            padding: 15px;
-            width: 300px;
-            margin: 5px 0px;
-        }
-        .close-modal {
-            margin-bottom: 20px;
-            color: teal;
-            padding: 8px;
-            border: 1px solid black;
-            border-radius: 5px;
-            margin-left: 5px;
-            width: 50px;
-            text-align: center;
-            background-color: #f0f0f0;
-            box-shadow: 0 2px 4px white;
-        }
-        a{
-            text-decoration: none;
-        }
-
-    </style>
+    <!-- link to the main css for the entire website -->
+    <link rel="stylesheet" href="/styles/portfolio.css">
+    
+    <!-- style for more beauty of the site -->
+    <link rel="stylesheet" href="/styles/just.css">
 </head>
 
 <body class="bg-gray-100 text-gray-900 leading-normal tracking-normal">
@@ -142,29 +44,22 @@
 
             <!-- Navigation links -->
             <div class="hidden md:flex space-x-4">
-                <a href="#about" class="text-peach-text hover:text-teal-text">About</a>
-                <a href="#portfolio" class="text-peach-text hover:text-teal-text">Portfolio</a>
-                <a href="#contact" class="text-peach-text hover:text-teal-text">Contact</a>
+                <a href="#about" class="text-peach-text hover:text-teal-text top-nav">About</a>
+                <a href="#portfolio" class="text-peach-text hover:text-teal-text top-nav">Portfolio</a>
+                <a href="#contact" class="text-peach-text hover:text-teal-text top-nav">Contact</a>
                 <!-- Add more navigation links as needed -->
             </div>
         </div>
     </nav>
-    
-    <!--
-
-    <div class="navbar-icon">
-        &#9776;
-    </div>
-    -->
 
     <div class="modal">
         <div class="modal-content">
             <button class="close-modal">&#10006;</button>
             <div class="modal-navbar-buttons">
                 <button><a class="" href="#">Home</a></button>
-                <button><a class="" href="#">Portfolio</a></button>
-                 <button><a class="" href="#">About</a></button>
-                 <button><a class="" href="#">Contact me</a></button>
+                <button><a class="" href="/html/portfolio.html">Portfolio</a></button>
+                 <button><a class="" href="/html/about.html">About</a></button>
+                 <button><a class="" href="#contact">Contact me</a></button>
             </div>
         </div>
     </div>
@@ -175,8 +70,8 @@
         <!-- SVG background pattern for profile picture -->
         <div class="absolute inset-0 profile-bg"></div>
         <div class="container mx-auto text-center">
-            <img src="dp.jpeg" alt="Your Name" class="w-32 h-32 rounded-full mx-auto mb-4">
-            <h1 class="text-peach-text text-4xl font-bold mb-4">Hello, I'm Moses Sunday</h1>
+            <img src="dp.jpeg" alt="Your Name" class="w-45 h-55 rounded-full mx-auto mb-4 owner-pic">
+            <h1 class="text-purple-text text-4xl font-bold mb-4 hero-intro">Hello, I'm Moses Sunday</h1>
             <p class="text-peach-text text-lg">
                 I am a passionate fullstack web developer.
             </p>
@@ -283,35 +178,7 @@
                 </p>
             </footer>
 
-            <!-- JavaScript for responsive mobile navigation -->
-            <script>
-                const mobileMenuButton = document.querySelector('.md:hidden');
-                const mobileMenu = document.querySelector('.hidden.md\\:flex');
-
-                mobileMenuButton.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            </script>
-
-            <!-- script for the modal -->
-                <script>
-        const navbarIcon = document.querySelector('.navbar-icon');
-        const modal = document.querySelector('.modal');
-        const closeModal = document.querySelector('.close-modal');
-
-        navbarIcon.addEventListener('click', () => {
-            modal.style.display = 'flex';
-        });
-
-        closeModal.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-    </script>
-            <!-- link for the carousel JavaScript engine -->
-            <script src="carousel.js">
-
-            </script>
-
         </body>
+        <script src="/js/portfolio.js"></script>
 
     </html>

@@ -22,8 +22,9 @@
  }
 
  header {
-   background-color: #4DA8F9;
-   color: #FFF;
+   background-color:silver;
+   color: purple;
+   font-weight: bold;
    padding: 20px;
    display: flex;
    justify-content: space-between;
