@@ -4,7 +4,7 @@
     const stackMessages = [
       'Software Developer',
       'Frontend Engineer',
-      'Full Stack Developer'
+      'Full Stack Web Developer'
     ];
 
     let currentStackIndex = 0;
@@ -15,5 +15,5 @@
     }
 
     // Update welcome note every 3 seconds
-    setInterval(updateWelcomeNote, 3000);
+    setInterval(updateWelcomeNote, 3500);
     // JavaScript code remains the same

@@ -103,7 +103,6 @@
    font-size: 24px;
    font-weight: bold;
    text-align: center;
-   animation: slideInOut 4s linear infinite;
  }
 
  @keyframes slideInOut {
