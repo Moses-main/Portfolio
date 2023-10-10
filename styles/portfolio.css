@@ -1,33 +1,34 @@
 /* THE BEGINNING OF THE CALL TO ACTION STYLES */
 
-.glowing-btn {display: inline-block;
-    padding: 12px 24px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color:purple;
-    color: white;
-    border-radius: 8px;
-    box-shadow: 3px 2px 5px purple;
-    border:1px solid purple;
-    animation: glowing 2s infinite, moveUpDown 2s infinite;
-  }
+.glowing-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: purple;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 3px 2px 5px purple;
+  border: 1px solid purple;
+  animation: glowing 2s infinite, moveUpDown 2s infinite;
+}
 
-  .glowing-btn:hover{
-    background-color:white;
-    color: purple;
-  }
+.glowing-btn:hover {
+  background-color: white;
+  color: purple;
+}
 
-.top-nav{
+.top-nav {
   background-color: purple;
   padding: 7px;
   color: white;
   border-radius: 5px;
 }
 
-.hero-intro{
+.hero-intro {
   color: purple;
 }
-.top-nav:hover{
+.top-nav:hover {
   background-color: white;
   color: purple;
   border-radius: purple;
@@ -35,198 +36,192 @@
   border: 1px solid purple;
 }
 
-  @keyframes glowing {
-    0% {
-      box-shadow: 0 0 5px #54a4a8;
-    }
-    50% {
-      box-shadow: 0 0 20px #54a4a8;
-    }
-    100% {
-      box-shadow: 0 0 5px #54a4a8;
-    }
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #54a4a8;
   }
+  50% {
+    box-shadow: 0 0 20px #54a4a8;
+  }
+  100% {
+    box-shadow: 0 0 5px #54a4a8;
+  }
+}
 
-  @keyframes moveUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-8px);
-    }
-      }
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
 
-.owner-pic{
-  border-right:4px solid purple;
-  border-top:4px solid purple
-
-
+.owner-pic {
+  border-right: 4px solid purple;
+  border-top: 4px solid purple;
 }
 /* THE END OF THE CALL TO ACTION STYLES */
-
-
 
 /* THE START OF THE CAROUSEL STYLES */
 
 /* Custom CSS for the carousel */
 .carousel-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-  }
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
 
-  .carousel-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.carousel-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-  .carousel-img.active {
-    opacity: 1;
-  }
+.carousel-img.active {
+  opacity: 1;
+}
 
-  .carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    border-radius: 0 0 10px 10px;
-  }
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
 
-  /* Custom styles for the buttons */
-  .carousel-controls {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
+/* Custom styles for the buttons */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
-  .carousel-btn {
-    padding: 10px 20px;
-    border: none;
-    background-color: #54a4a8;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 0 5px;
-  }
+.carousel-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #54a4a8;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
 
-  .carousel-btn:hover {
-    background-color: #3c8b8f;
-      }
-
+.carousel-btn:hover {
+  background-color: #3c8b8f;
+}
 
 /* THE END OF THE CAROUSEL STYLES */
 
-
 /* BEGINNING OF STYLES FOR THE BASIC DESIGN OF THE PAGES */
 
-        /* Custom colors and fonts */
-        body {
-            padding: 0px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        .teal-bg {
-            background-color: #54a4a8;
-        }
-        .peach-text {
-            color: #f9cdb8;
-        }
-        .peach-bg {
-            background-color: #f9cdb8;
-        }
-        .teal-text {
-            color: #54a4a8;
-        }
-        .teal-border {
-            border-color: #54a4a8;
-        }
-        .marg {
-            margin: 5px 20px;
-        }
-
-
-        /*styles for the modal box*/
-@media (max-width: 768px) {
-            .navbar {
-                display: none;
-            }
-            .navbar-icon {
-                display: block;
-            }
-            .modal {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.8);
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-            }
-            .modal-content {
-                background-color: white;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-.modal-navbar-buttons button {
-            display: block;
-            padding: 15px;
-            background-color: #f0f0f0;
-            width: 300px;
-            margin: 5px 0px;
-            border-radius: 5px;
-            font-size: 1.4rem;
-            border: 1px solid rgba(0,0,0,0.1);
-        }
-        }
-@media (min-width : 768px){
-   .navbar-icon {
-                visibility: hidden;
-                display: none;
-            }
-    .modal{
-        display: none;
-    }
+/* Custom colors and fonts */
+body {
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+.teal-bg {
+  background-color: #54a4a8;
+}
+.peach-text {
+  color: #f9cdb8;
+}
+.peach-bg {
+  background-color: #f9cdb8;
+}
+.teal-text {
+  color: #54a4a8;
+}
+.teal-border {
+  border-color: #54a4a8;
+}
+.marg {
+  margin: 5px 20px;
 }
 
-        .navbar-buttons {
-            display: flex;
-            padding: 15px;
-        }
-        .modal-navbar-buttons button {
-            display: block;
-            padding: 15px;
-            width: 300px;
-            margin: 5px 0px;
-        }
-        .close-modal {
-            margin-bottom: 20px;
-            color: teal;
-            padding: 8px;
-            border: 1px solid black;
-            border-radius: 5px;
-            margin-left: 5px;
-            width: 50px;
-            text-align: center;
-            background-color: #f0f0f0;
-            box-shadow: 0 2px 4px white;
-        }
-        a{
-            text-decoration: none;
-        }
+/*styles for the modal box*/
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .navbar-icon {
+    display: block;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .modal-navbar-buttons button {
+    display: block;
+    padding: 15px;
+    background-color: #f0f0f0;
+    width: 300px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 768px) {
+  .navbar-icon {
+    visibility: hidden;
+    display: none;
+  }
+  .modal {
+    display: none;
+  }
+}
+
+.navbar-buttons {
+  display: flex;
+  padding: 15px;
+}
+.modal-navbar-buttons button {
+  display: block;
+  padding: 15px;
+  width: 300px;
+  margin: 5px 0px;
+}
+.close-modal {
+  margin-bottom: 20px;
+  color: teal;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+  width: 50px;
+  text-align: center;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px white;
+}
+a {
+  text-decoration: none;
+}
 /* END OF THE STYLES FOR THE BASIC PAGES */
