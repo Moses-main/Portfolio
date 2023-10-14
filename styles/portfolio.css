@@ -36,6 +36,19 @@
   border: 1px solid purple;
 }
 
+#hanging_nav {
+  position: fixed;
+  /* margin-right: 60px; */
+  z-index: 1;
+  margin: 5px 50px 20px 0px;
+  top: -10px;
+  width: 100%;
+  display: flexbox;
+  /* padding-top: -10px; */
+  padding: 25px;
+  background-color: silver;
+  /* box-shadow: 3px 3px 5px white; */
+}
 @keyframes glowing {
   0% {
     box-shadow: 0 0 5px #54a4a8;
@@ -73,6 +86,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
+  width: 70%;
 }
 
 .carousel-img {

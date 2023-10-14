@@ -32,7 +32,8 @@
 <body class="bg-gray-100 text-gray-900 leading-normal tracking-normal">
 
     <!-- Navbar -->
-    <nav class="bg-teal-bg p-4 shadow-md">
+    <nav id="hanging_nav" class="bg-teal-bg p-4 shadow-md">
+        <!-- <br> -->
         <div class="container mx-auto flex items-center justify-between">
             <!-- Your logo or name here -->
             <a href="#" class="text-xl font-bold text-peach-text">Welcome !</a>
@@ -51,7 +52,9 @@
             </div>
         </div>
     </nav>
-
+<!-- <br>
+<br>
+<br> -->
     <div class="modal">
         <div class="modal-content">
             <button class="close-modal">&#10006;</button>
@@ -66,11 +69,14 @@
 
 
     <!-- Hero Section -->
+<br>
+<br>
     <header class="bg-gradient-to-r from-teal-bg to-peach-bg py-16 relative">
+
         <!-- SVG background pattern for profile picture -->
         <div class="absolute inset-0 profile-bg"></div>
         <div class="container mx-auto text-center">
-            <img src="/image/dp.jpeg" alt="Your Name" class="w-25 h-25 rounded-full mx-auto mb-4 owner-pic">
+            <img src="/image/dp.jpeg" alt="Your Name" class="w-25 h-80 rounded-full mx-auto mb-4 owner-pic">
             <h1 class="text-purple-text text-4xl font-bold mb-4 hero-intro">Hello, I'm Moses Sunday</h1>
             <p class="text-peach-text text-lg">
             <span class="welcome-note"></span>.
@@ -117,7 +123,7 @@
             </section>
 
             <!-- Portfolio Section -->
-            <section id="portfolio" class="py-16 bg-peach-bg rounded-lg shadow-lg md:px-16 lg:px-32">
+            <section id="portfolio" class="py-16 bg-peach-bg rounded-lg shadow-lg md:px-16 lg:px-40">
                 <div class="container mx-auto marg">
                     <h2 class="text-teal-text text-3xl font-bold mb-8">Portfolio <span><a href="portfolio.html" class="hover:text-teal-text"><i class="fab fa"></i>🔗</a></span></h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -138,6 +144,7 @@
                                     </p>
                                 </div>
                             </div>
+
                             <div class="carousel-controls text-center mt-4">
                                 <button class="carousel-btn" onclick="prevSlide()">Previous</button>
                                 <button class="carousel-btn" onclick="nextSlide()">Next</button>
@@ -181,6 +188,6 @@
         </body>
         <script src="/js/portfolio.js"></script>
         <script src="/js/just.js"></script>
-        <script src="/js/carousel.js"></script>:scr
+        <script src="/js/carousel.js"></script>
 
     </html>

@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Include Heroicons (for icons) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/heroicons/dist/heroicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <!-- Include Tailwind CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Include Heroicons (for icons) -->
-  <link href="https://cdn.jsdelivr.net/npm/heroicons/dist/heroicons.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="styles.css" rel="stylesheet">
-</head>
-
-<body class="bg-gray-100 font-sans">
-  <header class="bg-white shadow-lg">
-    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-gray-900">My Portfolio</h1>
-      <!-- Add any additional header elements you want -->
-    </div>
-  </header>
-
-  <main class="container mx-auto px-4 py-8">
-    <section class="mb-8">
-      <h2 class="text-xl font-bold mb-4">Projects</h2>
-      <!-- Add showcase of your projects -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <!-- Example project card -->
-        <div class="bg-white shadow-xl rounded-lg p-4">
-          <img class="w-full mb-4 rounded" src="prihealth.jpeg" alt="Project 1">
-          <h3 class="text-lg font-bold">Project 1</h3>
-          <p class="text-gray-600 mt-2">Project description goes here.</p>
-        </div>
-
-        <!-- Add more project cards as needed -->
+  <body class="bg-gray-100 font-sans">
+    <header class="bg-white shadow-lg">
+      <div
+        class="container mx-auto px-4 py-6 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-gray-900">My Portfolio</h1>
+        <!-- Add any additional header elements you want -->
       </div>
-    </section>
+    </header>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-bold mb-4">Skills</h2>
-      <!-- Add your skills and technologies you're proficient in -->
-      <ul class="flex flex-wrap">
-        <li class="bg-blue-500 text-white rounded-full px-4 py-2 m-1">HTML</li>
-        <li class="bg-blue-500 text-white rounded-full px-4 py-2 m-1">CSS</li>
-        <li class="bg-blue-500 text-white rounded-full px-4 py-2 m-1">JavaScript</li>
-        <!-- Add more skills as needed -->
-      </ul>
-    </section>
+    <main class="container mx-auto px-4 py-8">
+      <section class="mb-8">
+        <h2 class="text-xl font-bold mb-4">Projects</h2>
+        <!-- Add showcase of your projects -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Example project card -->
+          <div class="bg-white shadow-xl rounded-lg p-4">
+            <img
+              class="w-full mb-4 rounded"
+              src="prihealth.jpeg"
+              alt="Project 1"
+            />
+            <h3 class="text-lg font-bold">Project 1</h3>
+            <p class="text-gray-600 mt-2">Project description goes here.</p>
+          </div>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-bold mb-4">About Me</h2>
-      <!-- Write a brief introduction about yourself -->
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet odio non urna laoreet blandit non a
-        ante.</p>
-    </section>
-  </main>
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
 
-  <footer class="bg-gray-200 py-4">
-    <div class="container mx-auto px-4">
-      <!-- Add footer content if needed -->
-      <p class="text-center text-gray-600">© 2023 My Portfolio. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
+      <section class="mb-8">
+        <h2 class="text-xl font-bold mb-4">Skills</h2>
+        <!-- Add your skills and technologies you're proficient in -->
+        <ul class="flex flex-wrap">
+          <li class="bg-blue-500 text-white rounded-full px-4 py-2 m-1">
+            HTML
+          </li>
+          <li class="bg-blue-500 text-white rounded-full px-4 py-2 m-1">CSS</li>
+          <li class="bg-blue-500 text-white rounded-full px-4 py-2 m-1">
+            JavaScript
+          </li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </section>
 
+      <section class="mb-8">
+        <h2 class="text-xl font-bold mb-4">About Me</h2>
+        <!-- Write a brief introduction about yourself -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
+          amet odio non urna laoreet blandit non a ante.
+        </p>
+      </section>
+    </main>
+
+    <footer class="bg-gray-200 py-4">
+      <div class="container mx-auto px-4">
+        <!-- Add footer content if needed -->
+        <p class="text-center text-gray-600">
+          © 2023 My Portfolio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
