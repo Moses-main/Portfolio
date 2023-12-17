@@ -1,0 +1,26 @@
+/* You can adjust these styles based on your design preferences */
+.project-card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}

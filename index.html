@@ -20,7 +20,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- Link to thw carousel styling-->
-    <!-- <link rel="stylesheet" href="carousel.css" /> -->
+    <link rel="stylesheet" href="/carousel.css" />
 
     <!-- link to the main css for the entire website -->
     <link rel="stylesheet" href="/styles/portfolio.css">
@@ -108,7 +108,7 @@
 
                     <p class="text-teal-text mb-4 text-lg font-medium">
                         As a full-stack web developer, I bring a holistic approach to web development, seamlessly integrating front-end and back-end technologies.
-                        <span><a href="Moses_Sunday_resume.pdf" download="Moses_Sunday_resume" style="color: red;">Download Resume</a></span>
+                        <span><a href="./d/Moses_Sunday_resume.pdf" download="Moses_Sunday_resume" style="color: red;">Download Resume</a></span>
                     </p>
                     <!-- Add more content as needed -->
 
@@ -133,9 +133,32 @@
 
 
                         <!-- Add your portfolio projects here -->
+                        <div class="project-card" id="projectContainer">
+                            <!-- Project cards will be dynamically generated here -->
+                          </div>
+                          
 
+
+                        <div class="carousel-container">
+                            <div class="carousel-wrapper">
+                              <div class="carousel-slide">
+                                <!-- <div id="project-card">great</div> -->
+                                <!-- <div class="card"><img class="project-container" id="projectContainer" src="/image/health.jpeg" alt=""> Card 1</div> -->
+                                <div class="card" id="projectContainer"><span class="project-card " id="project-card"></span></div>
+                                <div class="card"><img src="/image/telhealth.jpeg" alt=""> Card 2</div>
+                                <div class="card"><img src="/image/dp.jpeg" alt=""> Card 3</div>
+                                <!-- Add more cards as needed -->
+                              </div>
+                            </div>
+                            <div>
+                            
+                                <button class="arrow prev"> <span class="carousel-btn" onclick="prevSlide()">Previous</span></button>
+                            <!-- <br> -->
+                                <button class="arrow next"> <span class="carousel-btn" onclick="prevSlide()">Previous</span></button>
+                          </div>
+                        </div>
                         <div class="w-2/3 mx-auto">
-                            <div class="carousel-container">
+                            <!-- <div class="carousel-container">
                                 <img src="/image/health.jpeg" alt="Image 1" class="carousel-img active">
                                 <img src="/image/telhealth.jpeg" alt="Image 2" class="carousel-img">
                                 <img src="/image/prihealth.jpeg" alt="Image 3" class="carousel-img">
@@ -144,12 +167,12 @@
                                         Hello
                                     </p>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="carousel-controls text-center mt-4">
+                            <!-- <div class="carousel-controls text-center mt-4">
                                 <button class="carousel-btn" onclick="prevSlide()">Previous</button>
                                 <button class="carousel-btn" onclick="nextSlide()">Next</button>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- Use image cards or links to the projects -->
                     </div>
