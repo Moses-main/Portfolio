@@ -46,8 +46,8 @@
             <!-- Navigation links -->
             <div class="hidden md:flex space-x-4">
                 <a href="#about" class="text-peach-text hover:text-teal-text top-nav">About</a>
-                <a href="#portfolio" class="text-peach-text hover:text-teal-text top-nav">Portfolio</a>
-                <a href="#contact" class="text-peach-text hover:text-teal-text top-nav">Contact</a>
+                <a href="/html/portfolio.html" class="text-peach-text hover:text-teal-text top-nav">Portfolio</a>
+                <a href="#connectt" class="text-peach-text hover:text-teal-text top-nav">Connect</a>
                 <!-- Add more navigation links as needed -->
             </div>
         </div>
@@ -59,10 +59,10 @@
         <div class="modal-content">
             <button class="close-modal">&#10006;</button>
             <div class="modal-navbar-buttons">
-                <button><a class="" href="#">Home</a></button>
+                <!-- <button><a class="" href="#">Home</a></button> -->
                 <button><a class="" href="/html/portfolio.html">Portfolio</a></button>
                  <button><a class="" href="/html/about.html">About</a></button>
-                 <button><a class="" href="#contact">Contact me</a></button>
+                 <button><a class="" href="#contact">Connect</a></button>
             </div>
         </div>
     </div>
@@ -126,15 +126,16 @@
             <!-- Portfolio Section -->
             <section id="portfolio" class="py-16 bg-peach-bg rounded-lg shadow-lg md:px-16 lg:px-40">
                 <div class="container mx-auto marg">
-                    <h2 class="text-teal-text text-3xl font-bold mb-8">Portfolio <span><a href="portfolio.html" class="hover:text-teal-text"><i class="fab fa"></i>🔗</a></span></h2>
+                    <h2 class="text-teal-text text-3xl font-bold mb-8"> 
+                        <!-- <span><a href="portfolio.html" class="hover:text-teal-text"><i class="fab fa"></i>🔗</a></span> -->
+                    </h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
 
 
 
                         <!-- Add your portfolio projects here -->
-                        <div class="project-card" id="projectContainer">
-                            <!-- Project cards will be dynamically generated here -->
+                        <!-- <div class="project-card" id="projectContainer">
                           </div>
                           
 
@@ -142,22 +143,18 @@
                         <div class="carousel-container">
                             <div class="carousel-wrapper">
                               <div class="carousel-slide">
-                                <!-- <div id="project-card">great</div> -->
-                                <!-- <div class="card"><img class="project-container" id="projectContainer" src="/image/health.jpeg" alt=""> Card 1</div> -->
                                 <div class="card" id="projectContainer"><span class="project-card " id="project-card"></span></div>
                                 <div class="card"><img src="/image/telhealth.jpeg" alt=""> Card 2</div>
                                 <div class="card"><img src="/image/dp.jpeg" alt=""> Card 3</div>
-                                <!-- Add more cards as needed -->
                               </div>
                             </div>
                             <div>
                             
                                 <button class="arrow prev"> <span class="carousel-btn" onclick="prevSlide()">Previous</span></button>
-                            <!-- <br> -->
                                 <button class="arrow next"> <span class="carousel-btn" onclick="prevSlide()">Previous</span></button>
                           </div>
                         </div>
-                        <div class="w-2/3 mx-auto">
+                        <div class="w-2/3 mx-auto"> -->
                             <!-- <div class="carousel-container">
                                 <img src="/image/health.jpeg" alt="Image 1" class="carousel-img active">
                                 <img src="/image/telhealth.jpeg" alt="Image 2" class="carousel-img">
@@ -182,7 +179,7 @@
             <!-- Contact Section -->
             <section id="contact" class="py-16 bg-white rounded-lg shadow-lg md:px-16 lg:px-32">
                 <div class="container mx-auto marg">
-                    <h2 class="text-teal-text text-3xl font-bold mb-8">Contact</h2>
+                    <h2 class="text-teal-text text-3xl font-bold mb-8">Let's connect</h2>
                     <p class="text-teal-text mb-4">
                         Get in touch with me:
                     </p>
@@ -210,7 +207,7 @@
             </footer>
 
         </body>
-        <script src="/js/portfolio.js"></script>
+        <script src="/js/modal_nav.js"></script>
         <script src="/js/just.js"></script>
         <script src="/js/carousel.js"></script>
         <script src="/js/old_carousel.js"></script>

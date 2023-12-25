@@ -3,73 +3,238 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <!-- Include Tailwind CSS -->
+    <title>Home | Moses</title>
+    <!-- Use your preferred fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <!-- Include Heroicons (for icons) -->
     <link
-      href="https://cdn.jsdelivr.net/npm/heroicons/dist/heroicons.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <!-- Custom CSS -->
-    <link href="styles.css" rel="stylesheet" />
+
+    <!-- Link for the call to action button -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--The style for the call to action button on the portfolio i.e ghr contact me buttons -->
+    <!-- <link rel="stylesheet" href="callAction.css" /> -->
+
+    <!-- Link for the carousel -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link to thw carousel styling-->
+    <link rel="stylesheet" href="/styles/carousel.css" />
+
+    <!-- link to the main css for the entire website -->
+    <link rel="stylesheet" href="/styles/portfolio.css" />
+
+    <!-- style for more beauty of the site -->
+    <link rel="stylesheet" href="/styles/just.css" />
   </head>
 
   <body class="bg-gray-100 font-sans">
-    <header class="bg-white shadow-lg">
-      <div
-        class="container mx-auto px-4 py-6 flex justify-between items-center"
-      >
-        <h1 class="text-2xl font-bold text-gray-900">My Portfolio</h1>
-        <!-- Add any additional header elements you want -->
-      </div>
-    </header>
+    <!-- Navbar -->
+    <nav id="hanging_nav" class="bg-teal-bg p-4 shadow-md">
+      <!-- <br> -->
+      <div class="container mx-auto flex items-center justify-between">
+        <!-- Your logo or name here -->
+        <a href="#" class="text-xl font-bold text-peach-text">Welcome !</a>
 
+        <!-- Mobile navigation button -->
+        <button class="md:hidden text-peach-text">
+          <i class="fas fa-bars navbar-icon"></i>
+        </button>
+
+        <!-- Navigation links -->
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="/index.html"
+            class="text-peach-text hover:text-teal-text top-nav"
+            >Home</a
+          >
+
+          <a href="#about" class="text-peach-text hover:text-teal-text top-nav"
+            >About</a
+          >
+
+          <a
+            href="#contact"
+            class="text-peach-text hover:text-teal-text top-nav"
+            >Contact</a
+          >
+          <!-- Add more navigation links as needed -->
+        </div>
+      </div>
+    </nav>
+    <!-- The pop up modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close-modal">&#10006;</button>
+        <div class="modal-navbar-buttons">
+          <button><a class="" href="/index.html">Home</a></button>
+          <!-- <button><a class="" href="/html/portfolio.html">Portfolio</a></button> -->
+          <button><a class="" href="/html/about.html">About</a></button>
+          <button><a class="" href="#contact">Connect</a></button>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <br /><br />
+    <!-- The different section that makes up the projects dones so far -->
     <main class="container mx-auto px-4 py-8">
       <section class="mb-8">
         <h2 class="text-xl font-bold mb-4">Projects</h2>
         <!-- Add showcase of your projects -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <!-- Example project card -->
-          <div class="bg-white shadow-xl rounded-lg p-4">
-            <img
-              class="w-full mb-4 rounded"
-              src="prihealth.jpeg"
-              alt="Project 1"
-            />
-            <h3 class="text-lg font-bold">Project 1</h3>
-            <p class="text-gray-600 mt-2">Project description goes here.</p>
-          </div>
+          <!-- blog app -->
+          <a href="#visit the page for the project"
+            ><div class="bg-white shadow-xl rounded-lg p-4">
+              <img
+                class="w-full mb-4 rounded"
+                src="/image/blog_app (1).png"
+                alt="Project 1"
+              />
+
+              <h3 class="text-lg font-bold">Mini Blog app</h3>
+              <p class="text-gray-600 mt-2">Project description goes here.</p>
+            </div></a
+          >
+          <!-- file upload web server -->
+          <a href="#visit the page for the project"
+            ><div class="bg-white shadow-xl rounded-lg p-4">
+              <img
+                class="w-full mb-4 rounded"
+                src="/image/file_upload.png"
+                alt="Project 1"
+              />
+
+              <h3 class="text-lg font-bold">File uploader</h3>
+              <p class="text-gray-600 mt-2">Project description goes here.</p>
+            </div></a
+          >
+          <!-- file upload web server -->
+          <a href="#visit the page for the project"
+            ><div class="bg-white shadow-xl rounded-lg p-4">
+              <img
+                class="w-full mb-4 rounded"
+                src="/image/blog_app (1).png"
+                alt="Project 1"
+              />
+
+              <h3 class="text-lg font-bold">Project 1</h3>
+              <p class="text-gray-600 mt-2">Project description goes here.</p>
+            </div></a
+          >
 
           <!-- Add more project cards as needed -->
         </div>
       </section>
-
+      <!-- Section for the skills and tech stacks -->
       <section class="mb-8">
-        <h2 class="text-xl font-bold mb-4">Skills</h2>
+        <h2 class="text-xl font-bold mb-4">Tech stacks</h2>
         <!-- Add your skills and technologies you're proficient in -->
         <ul class="flex flex-wrap">
-          <li class="bg-blue-500 text-white rounded-full px-4 py-2 m-1">
-            HTML
+          <li class="bg-red-600 text-white rounded-full px-4 py-2 m-1">HTML</li>
+          <li class="bg-blue-600 text-white rounded-full px-4 py-2 m-1">CSS</li>
+          <li class="bg-green-800 text-white rounded-full px-4 py-2 m-1">
+            Node Js
           </li>
-          <li class="bg-blue-500 text-white rounded-full px-4 py-2 m-1">CSS</li>
-          <li class="bg-blue-500 text-white rounded-full px-4 py-2 m-1">
+          <li class="bg-green-800 text-white rounded-full px-4 py-2 m-1">
+            Mongo DB
+          </li>
+          <li class="bg-blue-600 text-white rounded-full px-4 py-2 m-1">PHP</li>
+          <li class="bg-green-800 text-white rounded-full px-5 py-2 m-1">
+            Python
+          </li>
+          <li class="bg-yellow-700 text-white rounded-full px-4 py-2 m-1">
             JavaScript
+          </li>
+          <li class="bg-yellow-700 text-white rounded-full px-4 py-2 m-1">
+            MySQL
+          </li>
+          <li class="bg-yellow-700 text-white rounded-full px-4 py-2 m-1">
+            Express Js
+          </li>
+          <li class="bg-blue-700 text-white rounded-full px-4 py-2 m-1">Git</li>
+          <li class="bg-green-700 text-white rounded-full px-4 py-2 m-1">
+            jQuery
+          </li>
+          <li class="bg-yellow-700 text-white rounded-full px-4 py-2 m-1">
+            Bootstrap
+          </li>
+          <li class="bg-blue-700 text-white rounded-full px-4 py-2 m-1">
+            Composer
+          </li>
+          <li class="bg-green-800 text-white rounded-full px-4 py-2 m-1">
+            Laravel
           </li>
           <!-- Add more skills as needed -->
         </ul>
+        <!-- My resume for download -->
+        <p>
+          <a
+            href="/docs/Moses_Sunday_resume.pdf"
+            download="/docs/Moses_Sunday_resume.pdf"
+            style="color: red"
+            >Download Resume</a
+          >
+        </p>
       </section>
 
-      <section class="mb-8">
-        <h2 class="text-xl font-bold mb-4">About Me</h2>
-        <!-- Write a brief introduction about yourself -->
+      <!-- <section class="mb-8">
+        <h2 class="text-xl font-bold mb-4" id="contact">Contact Me</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
           amet odio non urna laoreet blandit non a ante.
         </p>
+      </section> -->
+
+      <!-- Write a brief introduction about yourself -->
+      <section
+        id="contact"
+        class="py-16 bg-white rounded-lg shadow-lg md:px-16 lg:px-32"
+      >
+        <div class="container mx-auto marg">
+          <h2 class="text-teal-text text-3xl font-bold mb-8">Let's connect</h2>
+          <p class="text-teal-text mb-4">Get in touch with me:</p>
+          <!-- Add a contact form or contact information -->
+          <div class="flex space-x-4 text-teal-text text-2xl">
+            <!-- Replace the "#" with your actual social media links -->
+            <a
+              href="https://twitter.com/SundayMoses0?t=bsDwcjAXaHMTh5-4g1vnLQ&s=09"
+              class="hover:text-teal-text"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/moses-sunday"
+              class="hover:text-teal-text"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/Moses-main" class="hover:text-teal-text"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://wa.link/y0mqz2" class="hover:text-teal-text"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+
+            <!--
+                          <a href="mailto: moseschizaram8@gmail.com" class="hover:text-teal-text"><i class="fab fa-mail"></i></a> -->
+
+            <!-- Add more social media handles as needed -->
+          </div>
+        </div>
       </section>
     </main>
 
@@ -81,5 +246,10 @@
         </p>
       </div>
     </footer>
+    <!-- <script src=""></script> -->
+    <script src="/js/modal_nav.js"></script>
+    <script src="/js/just.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/old_carousel.js"></script>
   </body>
 </html>
