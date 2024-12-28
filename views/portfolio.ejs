@@ -3,360 +3,174 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio| Moses</title>
-    <!-- Use your preferred fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Portfolio of Moses Sunday showcasing skills, projects, and experiences in software development."
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
+    <meta
+      name="keywords"
+      content="Moses Sunday, portfolio, software developer, backend engineer, blockchain developer"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Link for the call to action button -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
-    <!--The style for the call to action button on the portfolio i.e ghr contact me buttons -->
-    <!-- <link rel="stylesheet" href="callAction.css" /> -->
-
-    <!-- Link for the carousel -->
+    <meta name="author" content="Moses Sunday" />
+    <title><%= pageTitle %> - Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      /* Mobile view font-size adjustments */
+      @media (max-width: 640px) {
+        h2 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 0.875rem;
+        }
+        span {
+          font-size: 0.75rem;
+        }
+      }
 
-    <!-- Link to thw carousel styling-->
-    <link rel="stylesheet" href="/styles/carousel.css" />
-
-    <!-- link to the main css for the entire website -->
-    <link rel="stylesheet" href="/styles/portfolio.css" />
-
-    <!-- style for more beauty of the site -->
-    <link rel="stylesheet" href="/styles/just.css" />
+      /* Added transition for mobile menu */
+      #menuItems {
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+      }
+    </style>
   </head>
-
-  <body class="bg-gray-100 font-sans">
+  <body class="bg-gray-50 text-gray-800 font-sans">
     <!-- Navbar -->
-    <nav id="hanging_nav" class="bg-teal-bg p-4 shadow-md">
-      <!-- <br> -->
-      <div class="container mx-auto flex items-center justify-between">
-        <!-- Your logo or name here -->
-        <a href="#" class="text-xl font-bold text-peach-text">Portfolio !</a>
-
-        <!-- Mobile navigation button -->
-        <button class="md:hidden text-peach-text">
-          <i class="fas fa-bars navbar-icon"></i>
+    <nav class="bg-white shadow fixed w-full top-0 left-0 z-10">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="/" class="text-2xl font-bold text-blue-600">Moses Sunday</a>
+        <button
+          class="md:hidden text-gray-600 focus:outline-none"
+          id="menuToggle"
+        >
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
         </button>
-
-        <!-- Navigation links -->
-        <div class="hidden md:flex space-x-4">
-          <a href="/" class="text-peach-text hover:text-teal-text top-nav"
-            >Home</a
-          >
-
-          <!-- <a href="#about" class="text-peach-text hover:text-teal-text top-nav"
-            >About</a
-          > -->
-
-          <a
-            href="#contact"
-            class="text-peach-text hover:text-teal-text top-nav"
-            >Connect</a
-          >
-          <!-- Add more navigation links as needed -->
-        </div>
+        <ul
+          id="menuItems"
+          class="hidden md:flex space-x-6 absolute md:relative top-16 md:top-0 left-0 right-0 bg-white md:bg-transparent shadow-md md:shadow-none"
+        >
+          <li>
+            <a href="/" class="block py-2 px-4 hover:text-blue-600">Home</a>
+          </li>
+          <li>
+            <!-- <a href="/about" class="block py-2 px-4 hover:text-blue-600"
+              >About</a -->
+          </li>
+          <li>
+            <a href="#projects" class="block py-2 px-4 hover:text-blue-600"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="block py-2 px-4 hover:text-blue-600"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 px-4 hover:text-blue-600"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
-    <!-- The pop up modal -->
-    <div class="modal">
-      <div class="modal-content">
-        <button class="close-modal">&#10006;</button>
-        <div class="modal-navbar-buttons">
-          <button><a class="" href="/">Home</a></button>
-          <!-- <button><a class="" href="/html/portfolio.html">Portfolio</a></button> -->
-          <button><a class="" href="/html/about.html">About</a></button>
-          <button><a class="" href="#contact">Connect</a></button>
-        </div>
-      </div>
-    </div>
-    <br /><br />
-    <br /><br />
-    <!-- The different section that makes up the projects dones so far -->
-    <main class="container mx-auto px-4 py-8">
-      <section class="mb-8">
-        <h2 class="text-xl font-bold mb-4">Projects</h2>
-        <!-- Add showcase of your projects -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <!-- Example project card -->
-          <!-- blog app -->
-          <a
-            href="https://blog-app-4otp.onrender.com/"
-            rel="noopener"
-            target="_blank"
-            ><div class="bg-white shadow-xl rounded-lg p-4">
-              <img
-                class="w-full mb-4 rounded"
-                src="/image/blog_app (1).png"
-                alt="blog app"
-              />
 
-              <h3 class="text-lg font-bold">Mini Blog app</h3>
-              <p class="text-gray-600 mt-2">
-                A blog web app built with node, express, Mongo DB. Features
-                authentication and CRUD operatioin
-              </p>
-            </div></a
+    <!-- Main Content -->
+    <main class="mt-20">
+      <!-- Projects Section -->
+      <section id="projects" class="py-10">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-gray-800 text-center">
+            Projects
+          </h2>
+          <div
+            class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-
-          <!-- Explore web3 ecosystem -->
-          <a href="https://moses-main.github.io/web3-landing-page/"
-            ><div class="bg-white shadow-xl rounded-lg p-4">
+            <% projects.forEach(project => { %>
+            <div class="bg-white shadow rounded overflow-hidden">
               <img
-                class="w-full mb-4 rounded"
-                src="/image/explore_web3.png"
-                alt="explore web3"
+                src="<%= project.image %>"
+                alt="<%= project.title %>"
+                class="w-full h-48 object-cover"
               />
-
-              <h3 class="text-lg font-bold">Explore web3</h3>
-              <p class="text-gray-600 mt-2">
-                A platform to explore all about web3 .
-              </p>
-            </div></a
-          >
-          <!-- Chat app w/node js and socket.io -->
-          <a href="https://chat-app-os0m.onrender.com/"
-            ><div class="bg-white shadow-xl rounded-lg p-4">
-              <img
-                class="w-full mb-4 rounded"
-                src="/image/chatApp.png"
-                alt="chat room app"
-              />
-
-              <h3 class="text-lg font-bold">Chat room app</h3>
-              <p class="text-gray-600 mt-2">
-                A real time chat room web app built with express js, node js,
-                and socket.io package. Features mutliple users, activity
-                management, chat rooms.
-              </p>
-            </div></a
-          >
-          <!-- Todo list app w/laravel and mysql -->
-          <a href="https://github.com/Moses-main/Todo-app"
-            ><div class="bg-white shadow-xl rounded-lg p-4">
-              <img
-                class="w-full mb-4 rounded"
-                src="/image/Todo_app.png"
-                alt="chat room app"
-              />
-
-              <h3 class="text-lg font-bold">Todo List App</h3>
-              <p class="text-gray-600 mt-2">
-                A todo list app built with laravel (PHP web framework) and MySQL
-                database.
-              </p>
-            </div></a
-          >
-          <!-- QR code generator built with python, javascript, html & css -->
-          <a href="https://chizaram.pythonanywhere.com/"
-            ><div class="bg-white shadow-xl rounded-lg p-4">
-              <img
-                class="w-full mb-4 rounded"
-                src="/image/QR_Code_Generator.png"
-                alt="chat room app"
-              />
-
-              <h3 class="text-lg font-bold">QR Code Generator</h3>
-              <p class="text-gray-600 mt-2">
-                A QR Code Generator built with python, javascript, html and
-                Bootstrap css.
-              </p>
-            </div></a
-          >
-
-
-          <!-- Certificate generator built react, javascript, Material UI & css -->
-          <a href="https://tublian-internship-certificate.vercel.app/"
-            ><div class="bg-white shadow-xl rounded-lg p-4">
-              <img
-                class="w-full mb-4 rounded"
-                src="/image/certificate_gen.png"
-                alt="certificate generator"
-              />
-
-              <h3 class="text-lg font-bold">Certificate Generator<h3>
-              <p class="text-gray-600 mt-2">
-                A downloadable certificate generator built with React js, Material UI.
-              </p>
-            </div></a
-          >
-          <!-- web3 e-commerce store -->
-          <a href="https://moses-main.github.io/web3-ecommerce/"
-            ><div class="bg-white shadow-xl rounded-lg p-4">
-              <img
-                class="w-full mb-4 rounded"
-                src="/image/web3_e_commerce.png"
-                alt="Project 1"
-              />
-
-              <h3 class="text-lg font-bold">Web3 E-commerce store</h3>
-              <p class="text-gray-600 mt-2">
-                An online supermarktet (landing page) where you get to transact
-                using crytpos and tokens.
-              </p>
-            </div></a
-          >
-
-
-          <!-- Prime-college -->
-
-                 <!-- web3 e-commerce store -->
-                 <a href="https://prime-college.vercel.app/"
-                 ><div class="bg-white shadow-xl rounded-lg p-4">
-                   <img
-                     class="w-full mb-4 rounded"
-                     src="/image/prime-college.png"
-                     alt="Project 1"
-                   />
-     
-                   <h3 class="text-lg font-bold">Prime College Schools</h3>
-                   <p class="text-gray-600 mt-2">
-                     A Modern website for prime college, built with react js, javascript, tailwind css
-                   </p>
-                 </div></a
-               >
-
-          <!-- Add more project cards as needed -->
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-gray-800">
+                  <%= project.title %>
+                </h3>
+                <p class="text-gray-600 mt-2"><%= project.description %></p>
+                <a
+                  href="<%= project.link %>"
+                  class="inline-block mt-4 text-blue-600 hover:underline"
+                  >View Project</a
+                >
+              </div>
+            </div>
+            <% }) %>
+          </div>
         </div>
       </section>
-      <!-- Section for the skills and tech stacks -->
-      <section class="mb-8">
-        <h2 class="text-xl font-bold mb-4">Tech stacks</h2>
-        <!-- Add your skills and technologies you're proficient in -->
-        <ul class="flex flex-wrap">
-          <li class="bg-red-600 text-white rounded-full px-4 py-2 m-1">HTML</li>
-          <li class="bg-blue-600 text-white rounded-full px-4 py-2 m-1">CSS</li>
-          <li class="bg-green-800 text-white rounded-full px-4 py-2 m-1">
-            Node Js
-          </li>
-          <li class="bg-green-800 text-white rounded-full px-4 py-2 m-1">
-            Mongo DB
-          </li>
-          <li class="bg-blue-600 text-white rounded-full px-4 py-2 m-1">PHP</li>
-          <li class="bg-green-800 text-white rounded-full px-5 py-2 m-1">
-            Python
-          </li>
-          <li class="bg-yellow-700 text-white rounded-full px-4 py-2 m-1">
-            JavaScript
-          </li>
-          <li class="bg-yellow-700 text-white rounded-full px-4 py-2 m-1">
-            MySQL
-          </li>
-          <li class="bg-yellow-700 text-white rounded-full px-4 py-2 m-1">
-            Express Js
-          </li>
-          <li class="bg-blue-700 text-white rounded-full px-4 py-2 m-1">Git</li>
-          <li class="bg-blue-700 text-white rounded-full px-4 py-2 m-1">Solidity</li>
-          <li class="bg-green-700 text-white rounded-full px-4 py-2 m-1">
-            jQuery
-          </li>
-          <li class="bg-green-700 text-white rounded-full px-4 py-2 m-1">
-            React Js
-          </li>
-          <li class="bg-green-700 text-white rounded-full px-4 py-2 m-1">
-            Material UI
-          </li>
-          <li class="bg-yellow-700 text-white rounded-full px-4 py-2 m-1">
-            Bootstrap
-          </li>
-          <li class="bg-blue-700 text-white rounded-full px-4 py-2 m-1">
-            Composer
-          </li>
-          <li class="bg-green-800 text-white rounded-full px-4 py-2 m-1">
-            Laravel
-          </li>
-          <!--  -->
-          <!-- Add more skills as needed -->
-        </ul>
-        <!-- My resume for download -->
-        <br />
-        <br />
-        <p>
-          <span
-            ><a
-              href="https://drive.google.com/file/d/1Fr4KwFJU6Y8ZMaQlRxrGpn3ANtk5urBU/view?usp=drivesdk"
-              target="_blank"
-              style="color: red"
-              >View Resume</a
-            ></span
-          >
-        </p>
-      </section>
 
-      <!-- <section class="mb-8">
-        <h2 class="text-xl font-bold mb-4" id="contact">Contact Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
-          amet odio non urna laoreet blandit non a ante.
-        </p>
-      </section> -->
-
-      <!-- Write a brief introduction about yourself -->
-      <section
-        id="contact"
-        class="py-16 bg-white rounded-lg shadow-lg md:px-16 lg:px-32"
-      >
-        <div class="container mx-auto marg">
-          <h2 class="text-teal-text text-3xl font-bold mb-8">Let's connect</h2>
-          <p class="text-teal-text mb-4">Get in touch with me:</p>
-          <!-- Add a contact form or contact information -->
-          <div class="flex space-x-4 text-teal-text text-2xl">
-            <!-- Replace the "#" with your actual social media links -->
-            <a
-              href="https://x.com/Moses_Sunday_?t=Hv8h-rZyMQtbA03ZxJUGQA&s=09"
-              class="hover:text-teal-text"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/moses-sunday"
-              class="hover:text-teal-text"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/Moses-main" class="hover:text-teal-text"
-              ><i class="fab fa-github"></i
-            ></a>
-            <!-- <a href="https://wa.link/wj6szl" class="hover:text-teal-text"
-              ><i class="fab fa-whatsapp"></i
-            ></a> -->
-
-            <!--
-                          <a href="mailto: moseschizaram8@gmail.com" class="hover:text-teal-text"><i class="fab fa-mail"></i></a> -->
-
-            <!-- Add more social media handles as needed -->
+      <!-- Skills Section -->
+      <section id="skills" class="py-10 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl font-semibold text-gray-800">Skills</h2>
+          <div class="mt-4 flex flex-wrap justify-center space-x-4">
+            <% skills.forEach(skill => { %>
+            <span
+              class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium m-2"
+              ><%= skill %></span
+            >
+            <% }) %>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-gray-200 py-4">
-      <div class="container mx-auto px-4">
-        <!-- Add footer content if needed -->
-        <p class="text-center text-gray-600">
-          © 2024 My Portfolio. All rights reserved.
-        </p>
-      </div>
-    </footer>
-    <!-- <script src=""></script> -->
-    <script src="/js/modal_nav.js"></script>
-    <script src="/js/just.js"></script>
-    <script src="/js/carousel.js"></script>
-    <script src="/js/old_carousel.js"></script>
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const menuItems = document.getElementById("menuItems");
+
+      menuToggle.addEventListener("click", () => {
+        menuItems.classList.toggle("hidden");
+
+        if (!menuItems.classList.contains("hidden")) {
+          menuItems.classList.add("transform", "translate-x-0", "opacity-100");
+          menuItems.classList.remove(
+            "transform",
+            "-translate-x-full",
+            "opacity-0"
+          );
+        } else {
+          menuItems.classList.add(
+            "transform",
+            "-translate-x-full",
+            "opacity-0"
+          );
+          menuItems.classList.remove(
+            "transform",
+            "translate-x-0",
+            "opacity-100"
+          );
+        }
+      });
+    </script>
   </body>
 </html>
